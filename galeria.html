@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="C:\Users\Wendy Reyes\OneDrive\Desktop\Proyecto\CSS\2.css">
+    <title>Galería</title>
+    <title>cambiar cursor</title>
+    <style>
+        .cambiar-cursor{
+            cursor:pointer;
+            }
+        </style>
+</head>
+<body onclick="PlayAudio()">
+    <a target="_blank" class="boton de panico" href="https://www.youtube.com/watch?v=QOhmcbfwxnA/">boton de panico</a>  
+<div class="cambiar-cursor">
+</div>
+
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="historia.html">Historia</a>
+            <a href="contactanos.html">Contactanos</a>
+            <a href="ubicacion.html">Ubicación</a>
+        </nav>
+        <h1>Galería de Fotos</h1>
+    </header>
+
+    <audio  autoplay id="musica1" controls loop>
+        <source src="C:\Users\Wendy Reyes\OneDrive\Desktop\Proyecto\audio\DOORS Roblox OST Dawn of the Doors.mp3" type="audio/mpeg">
+            allow="encrypted-media">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="C:\Users\Wendy Reyes\OneDrive\Desktop\Proyecto\imag\ola.png" alt="Foto 1">
+                </div>
+                <div class="content">
+                    <h2>Logo principal</h2>
+                    <p>Es nuestra cara al publico.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="C:\Users\Wendy Reyes\OneDrive\Desktop\Proyecto\imag\halo.png" alt="Foto 2">
+                </div>
+                <div class="content">
+                    <h2>Muestra de nuestro producto</h2>
+                    <p>donde creamos los mejores pasteles.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="C:\Users\Wendy Reyes\OneDrive\Desktop\Proyecto\imag\pe.png" alt="Foto 3"> 
+                </div>
+                <div class="content">
+                    <h2>Nuestros deliciosos pastelillos</h2>
+                    <p>Te aseguramos el no llenarte solo con uno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function PlayAudio() {
+            document.getElementById("musica1").play();
+        }
+
+        document.getElementById("musica1").addEventListener("ended", function() {
+            var musica2 = document.getElementById("musica2");
+            musica2.play();
+        });
+
+        
+    </script>
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>
